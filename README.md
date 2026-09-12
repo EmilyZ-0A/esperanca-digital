@@ -1,14 +1,21 @@
-# 🌐 Esperança Digital
+# Esperança Digital
 
-## 📖 Descrição
-A Esperança Digital é uma ONG fictícia criada para este projeto acadêmico, com o objetivo de promover a inclusão digital em comunidades e organizações sociais de pequeno porte.  
-Este repositório contém o desenvolvimento da aplicação web da ONG, seguindo boas práticas de versionamento, acessibilidade e deploy.
+Este é o repositório inicial do projeto **Esperança Digital**.
 
----
+## 📌 Sobre o projeto
+O objetivo é organizar e publicar os arquivos do curso, mantendo o histórico de alterações e facilitando a colaboração.
 
-## 🚀 Instalação
-Clone o repositório e instale as dependências:
+## 🚀 Tecnologias utilizadas
+- HTML
+- CSS
+- Git & GitHub
 
-```bash
-git clone https://github.com/seu-usuario/esperanca-digital.git
-cd esperanca-digital
+## 📂 Estrutura
+- `index.html` → Página principal
+- `css/` → Estilos do projeto
+- `img/` → Imagens utilizadas
+
+## 🔧 Como usar
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/EmilyZ-0A/esperanca-digital.git
