@@ -1,21 +1,27 @@
-# Esperança Digital
+# Esperança Digital – Inclusão para todos
 
-Este é o repositório inicial do projeto **Esperança Digital**.
+## 📖 Sobre o projeto
+O **Esperança Digital** é uma iniciativa pedagógica que nasceu com o objetivo de reduzir a exclusão tecnológica.  
+Acreditamos que o acesso às ferramentas digitais é um direito de todos e trabalhamos para que comunidades e organizações sociais possam se conectar ao mundo digital.  
 
-## 📌 Sobre o projeto
-O objetivo é organizar e publicar os arquivos do curso, mantendo o histórico de alterações e facilitando a colaboração.
+Este repositório serve como exemplo prático de boas práticas em:
+- Estruturação de projetos web (HTML + CSS).
+- Documentação clara e acessível.
+- Versionamento com Git e GitHub.
+- Acessibilidade seguindo diretrizes **WCAG 2.1**.
 
-## 🚀 Tecnologias utilizadas
-- HTML
-- CSS
-- Git & GitHub
+---
 
-## 📂 Estrutura
-- `index.html` → Página principal
-- `css/` → Estilos do projeto
-- `img/` → Imagens utilizadas
+## 🛠️ Tecnologias utilizadas
+- **HTML5** → estrutura semântica e landmarks de acessibilidade.
+- **CSS3** → estilização responsiva e moderna.
+- **Git & GitHub** → controlo de versão e colaboração.
+- **WAI-ARIA** → atributos para acessibilidade em botões, formulários e modais.
 
-## 🔧 Como usar
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/EmilyZ-0A/esperanca-digital.git
+---
+
+## 📂 Estrutura de diretórios
+index.html
+css/
+style.css
+img/
