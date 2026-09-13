@@ -41,5 +41,22 @@
     navMenu.classList.toggle('show'); // alterna a classe "show"
   });
 </script>
+<script>
+  const toggleContrast = document.querySelector('#toggle-contrast');
+  const body = document.body;
+
+  if(localStorage.getItem('contrast') === 'high') {
+    body.classList.add('high-contrast');
+  }
+
+  toggleContrast.addEventListener('click', () => {
+    body.classList.toggle('high-contrast');
+    if(body.classList.contains('high-contrast')) {
+      localStorage.setItem('contrast', 'high');
+    } else {
+      localStorage.setItem('contrast', 'normal');
+    }
+  });
+</script>
 </body>
 </html>
