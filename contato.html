@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso Contato - Esperança Digital</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Esperança Digital</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Nosso contato</h2>
+    <p>📧 Email: contato@esperancadigital.org</p>
+    <p>📞 Telefone: (66) 99999-9999</p>
+    <p>🌐 Redes sociais: @esperancadigital</p>
+
+    <h3>Envie sua mensagem</h3>
+    <form>
+      <label for="nome">Seu nome:</label>
+      <input id="nome" type="text" required>
+
+      <label for="email">Seu email:</label>
+      <input id="email" type="email" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Esperança Digital</p>
+  </footer>
+<script>
+  // Seleciona o botão e o menu
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('nav ul');
+
+  // Adiciona evento de clique
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('show'); // alterna a classe "show"
+  });
+</script>
+</body>
+</html>

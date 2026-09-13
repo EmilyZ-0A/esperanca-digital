@@ -159,3 +159,37 @@ footer {
     font-size: 1rem;
   }
 }
+.high-contrast {
+  --color-bg: #000;
+  --color-text: #fff;
+  --color-primary: #ff0;
+}
+
+body.high-contrast {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+body.high-contrast a {
+  color: var(--color-primary);
+}
+
+body.high-contrast button {
+  background: var(--color-primary);
+  color: #000;
+}
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+a, button {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+body {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+body.switching {
+  opacity: 0.5;
+}

@@ -11,12 +11,13 @@
     <h1>Esperança Digital – Inclusão para todos</h1>
     <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
     <nav>
-      <ul>
-        <li><a href="#sobre">Sobre nós</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Nosso contato</a></li>
-      </ul>
-    </nav>
+  <ul>
+    <li><a href="sobre.html">Sobre nós</a></li>
+    <li><a href="projetos.html">Projetos</a></li>
+    <li><a href="contato.html">Nosso contato</a></li>
+  </ul>
+</nav>
+<button id="toggle-contrast">Alto contraste</button>
   </header>
 
   <main>
@@ -72,5 +73,33 @@
   <footer>
     <p>&copy; 2026 Esperança Digital</p>
   </footer>
+<script>
+  // Seleciona o botão e o menu
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('nav ul');
+
+  // Adiciona evento de clique
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('show'); // alterna a classe "show"
+  });
+</script>
+<script>
+  const toggleContrast = document.querySelector('#toggle-contrast');
+  const body = document.body;
+
+  // Carregar preferência salva
+  if(localStorage.getItem('contrast') === 'high') {
+    body.classList.add('high-contrast');
+  }
+
+  toggleContrast.addEventListener('click', () => {
+    body.classList.toggle('high-contrast');
+    if(body.classList.contains('high-contrast')) {
+      localStorage.setItem('contrast', 'high');
+    } else {
+      localStorage.setItem('contrast', 'normal');
+    }
+  });
+</script>
 </body>
 </html>
