@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre nós - Esperança Digital</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Sobre nós – Esperança Digital</title>
 </head>
 <body>
   <header>
-    <h1>Esperança Digital</h1>
+    <h1>Esperança Digital – Inclusão para todos</h1>
+    <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
     <nav>
       <ul>
         <li><a href="index.html">Início</a></li>
@@ -16,47 +16,78 @@
         <li><a href="contato.html">Nosso contato</a></li>
       </ul>
     </nav>
+    <button id="toggle-contrast">Alto contraste</button>
   </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO básico -->
+  <meta name="description" content="Esperança Digital – Inclusão para todos. Projetos sociais e digitais que promovem acessibilidade e oportunidades.">
+  <meta name="keywords" content="inclusão digital, acessibilidade, projetos sociais, esperança digital, tecnologia para todos">
+  <meta name="author" content="Esperança Digital">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./src/favicon.png">
+
+  <title>Esperança Digital – Início</title>
+</head>
 
   <main>
-    <h2>Sobre nós</h2>
-    <p>A Esperança Digital nasceu com o objetivo de reduzir a exclusão tecnológica. 
-    Acreditamos que o acesso às ferramentas digitais é um direito de todos e trabalhamos 
-    para que comunidades e organizações sociais possam se conectar ao mundo digital.</p>
+    <section>
+      <h2>Quem somos</h2>
+      <p>A <strong>Esperança Digital</strong> é uma iniciativa voltada para a inclusão tecnológica e social. 
+      Nosso propósito é reduzir a exclusão digital, oferecendo acesso a ferramentas, conhecimento e oportunidades 
+      para comunidades e organizações que enfrentam barreiras no mundo digital.</p>
+    </section>
 
-    <p>Oferecemos capacitação, apoio técnico e iniciativas que promovem inclusão digital, 
-    sempre com foco em acessibilidade e participação comunitária.</p>
+    <section>
+      <h2>Nossa missão</h2>
+      <p>Promover a democratização da tecnologia, capacitar pessoas em informática básica e apoiar ONGs e projetos 
+      comunitários na criação de presença digital.</p>
+    </section>
+
+    <section>
+      <h2>Nossos valores</h2>
+      <ul>
+        <li>📚 Educação e capacitação</li>
+        <li>🌍 Inclusão social e digital</li>
+        <li>🤝 Colaboração comunitária</li>
+        <li>💡 Inovação acessível</li>
+      </ul>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2026 Esperança Digital</p>
   </footer>
-<script>
-  // Seleciona o botão e o menu
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navMenu = document.querySelector('nav ul');
 
-  // Adiciona evento de clique
-  menuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('show'); // alterna a classe "show"
-  });
-</script>
-<script>
-  const toggleContrast = document.querySelector('#toggle-contrast');
-  const body = document.body;
+  <!-- Scripts -->
+  <script>
+    // Menu responsivo
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+  </script>
 
-  if(localStorage.getItem('contrast') === 'high') {
-    body.classList.add('high-contrast');
-  }
+  <script>
+    // Alto contraste com persistência
+    const toggleContrast = document.querySelector('#toggle-contrast');
+    const body = document.body;
 
-  toggleContrast.addEventListener('click', () => {
-    body.classList.toggle('high-contrast');
-    if(body.classList.contains('high-contrast')) {
-      localStorage.setItem('contrast', 'high');
-    } else {
-      localStorage.setItem('contrast', 'normal');
+    if (localStorage.getItem('contrast') === 'high') {
+      body.classList.add('high-contrast');
     }
-  });
-</script>
+
+    toggleContrast.addEventListener('click', () => {
+      body.classList.toggle('high-contrast');
+      localStorage.setItem('contrast', body.classList.contains('high-contrast') ? 'high' : 'normal');
+    });
+  </script>
+
+  <!-- Importação do bundle Vite -->
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>
