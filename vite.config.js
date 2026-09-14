@@ -1,6 +1,8 @@
-export default {
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  base: '/esperanca-digital/',
   build: {
-    outDir: 'dist',   // pasta final
-    minify: 'esbuild' // minificação automática
+    outDir: 'dist'
   }
-}
+});
